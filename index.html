@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--website title-->
+        <title>Ivy Patterson Portfolio</title>
+        <!--style sheets-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--web fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fascinate+Inline&family=Karla:ital,wght@0,500;1,500&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    </head>
+
+    
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="site logo"> </a>
+                <nav>
+                    <ul id="menu-List">
+                        <li><a href="resume/index.html">Resume</a></li>
+                        <li><a href="work/index.html">Work</a></li>
+                        <li><a href="contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="img/menu.png" alt="menu" class="menu-icon" onclick="togglemenu()">
+            </div>
+
+            <div class="row">
+                <div class="col-one">
+                    <h2>Hi there!</h2>
+                    <h3>I'm Ivy Patterson.</h3>
+                    <div class="button">
+                        <button type="button" id="button">here's a bit about me. <img src="img/arrow.png" alt="arrow"></button>
+                    </div>
+                </div>
+
+                <div class="col-two">
+                    <img src="img/developers.png" alt="developers make the world (wide web) go round!" class="developers">
+                    <div class="color-box" id="color-box"></div>
+                </div>
+            </div>
+            </div>
+            <footer>
+             <div class="social-links">
+                <a href="https://www.instagram.com/ivy.nadine" target="_blank">
+                <img src="img/instagram.png" alt=""></a>
+                <a href="https://www.github.com" target="_blank">
+                <img src="img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com" target="_blank">
+                <img src="img/linkedin.png" alt=""></a>
+
+            </div>
+            </footer>
+        
+
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight="0px";
+
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
